@@ -1,0 +1,73 @@
+<div class="maincon" style="background-image:url(../../assets/517256.png); background-size: cover; background-position: center; background-attachment: fixed;height: 830px; " >
+    <div style="margin: auto; width: 800px;" class="container">
+        <h1>Apply Now</h1>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <!-- name -->
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="first_name">First Name:</label>
+                    <input formControlName="first_name" type="text" class="form-control" id="first_name">
+                    <div *ngIf="submitted && registerForm.controls['first_name'].errors" class="text-danger">
+                        <div *ngIf="submitted && registerForm.controls['first_name'].errors['required']">
+                            * First Name is required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label for="Last_name">Last Name:</label>
+                    <input formControlName="last_name" type="text" class="form-control" id="last_name">
+                    <div *ngIf="submitted && registerForm.controls['last_name'].errors" class="text-danger">
+                        <div *ngIf="submitted && registerForm.controls['last_name'].errors['required']">
+                            * Last Name is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="email">Personal Email:</label>
+                    <input formControlName="email" type="email" class="form-control" id="email">
+                    <div *ngIf="submitted && registerForm.controls['email'].errors" class="text-danger">
+                        <div *ngIf="submitted && registerForm.controls['email'].errors['required']">
+                            * Email ID is required
+                        </div>
+                    </div>
+                </div>
+               
+                      <div class="input-field">
+          <label for="applying_for">Applying for:</label>  
+          <div class="select-wrapper">
+            <select formControlName="applying_for" [ngClass]="{'is-invalid': submitted && registerForm.controls['applying_for'].errors}" class="form-control" id="applying_for" >
+              <option value="" disabled selected>Select Course</option>
+              <option value="java fullstack">Java Fullstack</option>
+              <option value="mulesoft">Mulesoft</option>
+              <option value="python">Python</option>
+            </select>
+            <div class="arrow-down"></div>
+          </div>
+          <div *ngIf="submitted && registerForm.controls['applying_for'].errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls['applying_for'].errors['required']">
+              * Select any Course 
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+                <div class="input-field">
+                    <label for="phone">Mobile Phone:</label>
+                    <input formControlName="phone" type="tel" class="form-control" id="phone">
+                    <div *ngIf="submitted && registerForm.controls['phone'].errors" class="text-danger">
+                        <div *ngIf="submitted && registerForm.controls['phone'].errors['required']">
+                            * Mobile number is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <input class="btn btn-primary" type="submit" (click)="updateEmployee()" value="Submit">
+        </form>
+    </div>
+</div>

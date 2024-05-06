@@ -1,0 +1,107 @@
+.container {
+  background-color: #f0f0f0; /* Gray background color */
+  margin-top: 10px;
+  padding: 20px; /* Add some padding for spacing */
+}
+.analytics {
+  background-color: white;
+  /* text-align: center; */
+  margin-top: 0px;
+  margin-bottom:4px;
+  padding: 10px; /* Add padding for spacing */
+}
+.card1 {
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom:3px;
+  /* border-radius: 5px; */
+  padding: 20px;
+  /* flex: 0 0 calc(50% - 5px); Each card takes 50% width with 5px space between */
+}
+ 
+.line {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  position: relative;
+}
+ 
+ 
+ 
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: gray;
+  margin-top: 18px;
+}
+ 
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.card {
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 0 0 calc(50% - 5px); /* Each card takes 50% width with 5px space between */
+}
+/* .card .left{
+  margin-top: 10px;
+} */
+ 
+ 
+.card .right {
+ 
+  margin-left: 10px;
+  text-align: right;
+}
+ 
+ 
+.button1 {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: blue; /* Green background */
+  color: white; /* White font color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.button2 {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: blue; /* Green background */
+  color: white; /* White font color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.button3 {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: blue; /* Green background */
+  color: white; /* White font color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+ 
+.button:hover ,.button1:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+.button:hover ,.button2:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+.button:hover ,.button3:hover {
+  background-color: #218838; /* Darker green on hover */
+}

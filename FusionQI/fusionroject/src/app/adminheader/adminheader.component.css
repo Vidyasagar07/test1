@@ -1,0 +1,67 @@
+/* Header styles */
+.header {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+   /* Search bar styles */
+   .search-bar {
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-40%);
+    color:black;
+    z-index: 0; /* Ensure the icon is above the input */
+  }
+
+  .dropdown {
+    position: relative;
+    
+  }
+
+  .dropdown-content {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: none;
+    position: absolute;
+    background-color: black; /* Changed to black */
+    color: white;
+    min-width:50px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 8px;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #333; /* Change background color on hover */
+  }
+
+  /* Align all elements in one line */
+  .header > div {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styling for links */
+  .header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }

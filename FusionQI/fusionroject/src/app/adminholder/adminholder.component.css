@@ -1,0 +1,21 @@
+.nav-link.btn {
+    color: black; /* Text color */
+    background-color: white; /* Background color */
+    border-color: white; /* Border color */
+}
+
+.nav-link.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-link.btn.active {
+    background-color: black;
+    color: white;
+}
+.tab-content {
+    width: 100%; /* Adjust this value as needed */
+}
+.adminslide{
+    width: 1212px;
+}

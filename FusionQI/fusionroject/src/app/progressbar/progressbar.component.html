@@ -1,0 +1,14 @@
+<div class="progressbar">
+  <h4>Progress of your Curriculum</h4>
+  <div class="progress-bar">
+    <div class="step" *ngFor="let step of steps; let i = index" [ngClass]="{'completed': completedSteps >= i+1, 'current': currentStep === i+1, 'last': currentStep === steps.length && completedSteps === steps.length}" [style.--step-index]="i+1">
+      <span class="icon">{{ completedSteps > i ? '✓' : i+1 }}</span>
+      <span class="label">{{ step }}</span>
+    </div>
+  </div>
+  <div class="controls">
+    <button (click)="goBack()" [disabled]="currentStep === 1">Back</button>
+    <button (click)="goNext()" [disabled]="currentStep === steps.length">Next</button>
+    <span>Step: {{ steps[currentStep-1] }}</span>
+  </div>
+</div>

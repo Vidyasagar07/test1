@@ -1,0 +1,59 @@
+<div>
+  <div>
+    <img src="../../assets/ai2.webp" alt="" style="width: 100%;height: 150vh;">
+  </div>
+  <div class="main-std">
+    
+    <section class="container">
+      <header>Registration Form</header>
+      <form (submit)="submit()" class="form" #registrationForm="ngForm">
+    
+        <div class="column">
+          <div class="contact">
+          </div>
+          <div class="date">
+            <div class="input-box date">
+              <label>Birth Date</label>
+              <input type="date" placeholder="Enter birth date" required max="2004-04-10" [(ngModel)]="dateOfBirth" name="dateOfBirth" #dateOfBirthInput="ngModel"/>
+            </div>
+          </div>
+        </div>
+    
+        <div class="input-box">
+          <h3>Education Details</h3>
+          <div class="input-box year">
+            <label for="yearOfCompletion">Year of Completion</label>
+            <select id="yearOfCompletion" name="yearOfCompletion" required [(ngModel)]="yearOfCompletion" #yearOfCompletionInput="ngModel">
+              <option value="" disabled selected hidden>Select Year</option>
+              <!-- Adjust the range of years as per your requirement -->
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <!-- Add more years as needed -->
+            </select>
+          </div>
+          <div class="input-box university">
+            <input type="text" placeholder="Enter university" required [(ngModel)]="university" name="university" #universityInput="ngModel"/>
+          </div>
+          <div class="input-box branch">
+            <input type="text" placeholder="Enter branch" required [(ngModel)]="branch" name="branch" #branchInput="ngModel"/>
+          </div>
+          <div class="input-box cgpa">
+            <input type="text" placeholder="Enter CGPA" required pattern="[0-9]+(\.[0-9]{1,2})?" title="CGPA must be a number with up to two decimal places" [(ngModel)]="cgpa" name="cgpa" #cgpaInput="ngModel"/>
+          </div>
+        </div>
+        <div class="input-box address">
+          <div class="input-box address">
+            <h3>Address</h3>
+            <input type="text" placeholder="House No." required [(ngModel)]="houseNo" name="houseNo" #houseNoInput="ngModel"/><br>
+            <input type="text" placeholder="City" required [(ngModel)]="city" name="city" #cityInput="ngModel"/><br>
+            <input type="text" placeholder="Pin Code" required pattern="[0-9]{6}" title="Pin Code must be 6 digits long" [(ngModel)]="pinCode" name="pinCode" #pinCodeInput="ngModel"/><br>
+            <input type="text" placeholder="state" required [(ngModel)]="state" name="state" #stateInput="ngModel"/>
+          </div>
+        </div>
+        <button type="submit" >Submit</button>
+        <!-- [disabled]="registrationForm.invalid"  -->
+      </form>
+    </section>
+    
+  </div>
+</div>

@@ -1,0 +1,192 @@
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* .nav-link{
+  color:white;
+} */
+.suggest{
+  
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.suggest input{
+  width: 200px;
+}
+.suggest ul{
+  list-style-type: none;
+}
+.container-fluid{
+margin-left: 150px;
+}
+a:hover {
+  color: rgb(62, 204, 181);
+}
+
+a {
+  color: whitesmoke;
+}
+.dropdown {
+  padding-right: 40px;
+}
+.dropdown-menu {
+  background-color: gray;
+  width: 5px;
+  /* margin-right: 150px; */
+  /* z-index: 1000; */
+  position: absolute;
+}
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 200px;
+}
+/* .group input{
+        height: 45px;
+        width: 400px;
+    } */
+
+.input {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 45px;
+  padding-left: 2.5rem;
+  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+  border: 0;
+  border-radius: 12px;
+  background-color: #16171d;
+  outline: none;
+  color: #bdbecb;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+.header{
+  background-color: rgb(1,1,1);
+}
+
+.input::placeholder {
+  color: #bdbecb;
+}
+
+/* .input:hover {
+  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+} */
+
+
+
+
+.search-icon {
+  position: absolute;
+  left: 4rem;
+  top: 1rem;
+  fill: #bdbecb;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  z-index: 1;
+}
+.nav-list .nav-item {
+  margin-left: 80px; /* Adjust this value to set the desired gap */
+}
+.prfile-menu {
+  margin-right: 200px;
+}
+.search-home{
+  margin-left: 50px;
+  width: 450px;
+}
+.nav-course{
+ /* padding-right: 50px; */
+  margin-left: 30.9px;
+}
+.nav-home{
+  margin-right: 50px;
+}
+.nav-about{
+  width: 90px;
+  
+}
+.nav-home{
+  width: 80px;
+  margin-left: 40px;
+}
+.course-nav{
+  width: 80px;
+  margin-left: 30.9px;
+}
+.nav-contact{
+  width: 120px;
+  margin-left: 51.9px;
+}
+.nav-login{
+  width: 100px;
+  margin-left: 15.9px;
+}
+.Left svg{
+  margin-bottom: 10px;
+  width: 35px;
+  margin-right: 5px;
+}
+.header {
+  background-color: rgb(1, 1, 1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.search-home {
+  width: 450px;
+}
+
+.nav-list .nav-item {
+  margin: 0 80px; /* Adjust this value as needed */
+  
+}
+.about{
+  /* margin-left: 20px; */
+  margin-right: 70px;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+ 
+.navbar-nav .nav-login {
+  margin-left: auto;
+}
+ 
+.navbar-nav .nav-item {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+/* Add this CSS to change active nav link c... by Nagendra Koppisetti
+Nagendra Koppisetti
+23:30
+/* Add this CSS to change active nav link color to red */
+/* .navbar-nav .nav-link.active {
+  color: red !important;
+} */
+.navbar-nav .nav-link.active {   
+  color: green;
+  }

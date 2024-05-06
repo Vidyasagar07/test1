@@ -1,0 +1,316 @@
+<div class="section1-container">
+  <div class="section1-left">
+    <h1>
+      Welcome to <br />
+      FusionIQ.ai
+    </h1>
+    <p class="sctn1-cntr-p-1">
+      Experience The Perfect Fusion Where Innovation Meets Inspiration
+    </p>
+    <!-- <p class="sctn1-cntr-p-2">Where Innovation Meets </p>
+        <p class="sctn1-cntr-p-3">Inspiration"</p><br> -->
+    <button class="sctn-btn">Explore our Courses</button>
+  </div>
+  <div class="section1-right">
+    <div class="form-cont-main">
+      <div class="container-form">
+        <form [formGroup]="registerForm" (ngSubmit)="registerForm.status !== 'INVALID' && registerFoo()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="fullname" name="name" class="form-control" formControlName="fullname"
+              [ngClass]="{error : getControl('fullname')?.errors && getControl('fullname')?.touched}" />
+            <div *ngIf="getControl('fullname')?.errors && getControl('fullname')?.touched">
+              <small class="text-danger" *ngIf="getControl('fullname')?.errors?.['required']">
+                *Name field is requird</small>
+
+              <small class="text-danger" *ngIf="getControl('fullname')?.errors?.['maxlength']">Only 32 characters are
+                allowed.</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="Email" class="form-control" formControlName="email"
+              [ngClass]="{error : getControl('email')?.errors && getControl('email')?.touched}">
+            <div *ngIf="
+                getControl('email')?.errors && getControl('email')?.touched
+              ">
+              <small class="text-danger" *ngIf="getControl('email')?.errors?.['required']">*Email field is
+                requird</small>
+
+              <small class="text-danger" *ngIf="getControl('email')?.errors?.['maxlength']">*Email should be maximum 32
+                characters long.</small>
+
+              <small class="text-danger" *ngIf="getControl('email')?.errors?.['pattern']">*Please enter a valid
+                Email.</small>
+            </div>
+          </div>
+          <div class="ffff">
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="tel" id="phone" name="phone" class="form-control" formControlName="phone"
+                [ngClass]="{error : getControl('phone')?.errors && getControl('phone')?.touched}">
+              <div *ngIf="
+                  getControl('phone')?.errors && getControl('phone')?.touched
+                ">
+                <small class="text-danger" *ngIf="getControl('phone')?.errors?.['required']">*Phone field is
+                  requird</small>
+
+                <small class="text-danger"
+                  *ngIf="getControl('phone')?.errors?.['minlength'] || getControl('phone')?.errors?.['maxlength'] || getControl('phone')?.errors?.['pattern']">Please
+                  enter a valid Phone no.</small>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="course">Applying for</label>
+            <select id="applying_for" name="Applying_for" class="form-control" formControlName="applying_for"
+              [ngClass]="{error : getControl('applying_for')?.errors && getControl('applying_for')?.touched}">
+              <option value="" selected>Select Course</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+              <option value="Mulesoft">Mulesoft</option>
+            </select>
+            <div *ngIf="
+                getControl('Applying_for')?.errors &&
+                getControl('Applying_for')?.touched
+              ">
+              <small class="text-danger" *ngIf="getControl('Applying_for')?.errors?.['required']">*Phone field is
+                requird</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-success" [disabled]="registerForm.status === 'INVALID'">
+          </div>
+
+        </form>
+        <div class="thankyou" *ngIf="thankYouVisible">
+          <div class="thankyou-right">
+            <img src="../../assets/rtaImage.avif" alt=""
+              style="width: 600px;height: 504px;">
+
+            <!-- <h2>FusionIQ.ai <br> Thanks for applying! <br> We'll review your application. </h2> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="withmentors">
+  <!-- <div class="bubble-image">
+        <img src="../../assets/bubbles.webp" alt="" style="width: 80rem; height: 200px;">
+    </div> -->
+  <div class="bubble-image-text">
+    <div class="mentor1" style="margin-top: 35px;">
+      <img src="../../assets/mentor.webp" alt="" style="border-radius: 50%" />
+      <h5>1:1 with Mentors</h5>
+    </div>
+    <div class="mentor2" style="margin-left: 160px">
+      <img src="../../assets/mentor2.webp" alt="" style="border-radius: 50%" />
+      <h5>Realtime Hands-On</h5>
+    </div>
+    <div class="mentor3" style="margin-left: 160px">
+      <img src="../../assets/mentor3.webp" alt="" style="border-radius: 50%" />
+      <h5>Career Assistance</h5>
+    </div>
+    <div class="mentor4" style="margin-left: 160px">
+      <img src="../../assets/mentor4.webp" alt="" style="border-radius: 50%" />
+      <h5>Self-paced</h5>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- <div class="image-about">
+        <img src="../../assets/mttrf.webp" alt="" style="width: 79rem; height: 36.5rem;">
+    </div> -->
+  <div class="aboutus-text">
+    <h1>About Us</h1>
+    <p>
+      FusionIQ.ai is a tech-savvy business based in Hyderabad, offering
+      innovative solutions in artificial intelligence, coding, and data science.
+      Our courses in Java Fullstack , Python, Devops , AI and Machine Learning
+      and data science emphasize hands-on learning through tutorials and
+      projects. We operate both online and have a physical location in Hyderabad
+      (KPHB), aiming to meet the evolving needs of businesses and individuals.
+      Our unique selling point is our combination of physical and online
+      presence, providing a convenient and effective learning experience for our
+      students. Our team of experienced instructors and industry experts are
+      dedicated to helping our students succeed in their careers and achieve
+      their goals.
+    </p>
+    <div class="img2-about">
+      <img src="../../assets/aboutus.webp" alt="" style="width: 400px; height: 180px" />
+      <p>
+        "Your Gateway to <br />
+        Success in the Tech <br />
+        Industry Starts Here."
+      </p>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div class="course-i">
+      <div class="card-course">
+        <p>OUR COURSES</p>
+      </div>
+      <div class="container-course">
+        <div class="left-course">
+          <div class="card mb-3" style="max-width: 541px; max-height: 250px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../../assets/jaavaa.jpg" class="img-fluid rounded-start" alt="..."
+                  style="height: 240px; width: auto; border-radius: 2px" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="
+                    background-color: #686565;
+                    height: 15em;
+                    color: rgb(0, 0, 0);
+                  ">
+                  <p class="card-text">
+                    "Dive into the world of Java programming with expert
+                    instruction and hands-on projects. Master Java fundamentals
+                    and advance your coding skills at your own pace. Join us now
+                    and unlock endless possibilities in the tech industry!"
+                  </p>
+                  <br />
+                  <div class="card-read-next">
+                    <img src="../../assets/pngegg.webp" alt="" style="width: 20px; height: 20px" />
+                    <h5 style="padding-left: 5px; font-size: medium" class="card-title">
+                      3 Months
+                    </h5>
+                    <button style="
+                        background-color: rgb(39, 130, 113);
+                        width: 100px;
+                        height: 30px;
+                      "
+                      (click) = "java()">
+                      Readmore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 541px; max-height: 250px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../../assets/AI logo.webp" class="img-fluid rounded-start" alt="..."
+                  style="height: 240px; width: auto; border-radius: 2px" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="
+                    background-color: #686565;
+                    height: 15em;
+                    color: rgb(0, 0, 0);
+                  ">
+                  <p class="card-text">Describe one of your services</p>
+                  <br /><br /><br /><br /><br /><br />
+                  <div class="card-read-next">
+                    <img src="../../assets/pngegg.webp" alt="" style="width: 20px; height: 20px" />
+                    <h5 style="padding-left: 5px; font-size: medium" class="card-title">
+                      3 Months
+                    </h5>
+                    <button style="
+                        background-color: rgb(39, 130, 113);
+                        width: 100px;
+                        height: 30px;
+                      ">
+                      Readmore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-course">
+          <div class="card mb-3" style="max-width: 541px; max-height: 250px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../../assets/python.webp" class="img-fluid rounded-start" alt="..."
+                  style="height: 240px; width: auto; border-radius: 2px" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="
+                    background-color: #686565;
+                    height: 15em;
+                    color: rgb(0, 0, 0);
+                  ">
+                  <p class="card-text">
+                    "Ready to unleash the potential of Python? Our online course
+                    offers a fast-track journey into the world of coding. From
+                    basic syntax to advanced concepts, dive deep into Python with
+                    hands-on projects and expert guidance!"
+                  </p>
+                  <br />
+                  <div class="card-read-next">
+                    <img src="../../assets/pngegg.webp" alt="" style="width: 20px; height: 20px" />
+                    <h5 style="padding-left: 5px; font-size: medium" class="card-title">
+                      3 Months
+                    </h5>
+                    <button style="
+                        background-color: rgb(39, 130, 113);
+                        width: 100px;
+                        height: 30px;
+                      "
+                      (click) = "python()">
+                      Readmore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 541px; max-height: 250px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../../assets/mulesoft logo.jpg" class="img-fluid rounded-start" alt="..."
+                  style="height: 240px; width: auto; border-radius: 2px" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="
+                    background-color: #686565;
+                    height: 15em;
+                    color: rgb(0, 0, 0);
+                  "
+                  >
+                  <p class="card-text">
+                    "Embark on your MuleSoft journey with our comprehensive online
+                    course! Learn to harness the power of MuleSoft's integration
+                    platform through expert instruction, real-world examples, and
+                    hands-on projects!"
+                  </p>
+                  <br />
+                  <div class="card-read-next">
+                    <img src="../../assets/pngegg.webp" alt="" style="width: 20px; height: 20px" />
+                    <h5 style="padding-left: 5px; font-size: medium" class="card-title">
+                      3 Months
+                    </h5>
+                    <button style="
+                        background-color: rgb(39, 130, 113);
+                        width: 100px;
+                        height: 30px;
+                      "
+                      (click) = "mulesoft()">
+                      Readmore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="padding-top: 550px; ">
+  <div class="tree-frgt" style="background-color: rgb(75,75,75);width: 100vw;height: 315px;">
+    <h1 style="color: white;font-size: 3.15em;margin-left: 270px;padding-top: 50px;letter-spacing: 2.5px;">"Your journey to success starts now."</h1>
+    <h6 style="margin-left: 430px;color: white;padding-top: 30px;">"Seventy-five percent of participants in our program make a career transition within six months."</h6>
+    <div><button style="margin-left: 700px;margin-top: 30px;background-color: rgb(58, 143, 127);color: white;  width: 150px;height: 50px;" 
+      (click) = "startnow()">Start Now</button></div>
+</div>
+</div>

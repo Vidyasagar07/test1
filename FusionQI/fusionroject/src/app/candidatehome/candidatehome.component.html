@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">my<span class="myl">Learnings</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+   
+        <img src="../../assets/java pictures.jpg" alt="pp" class="pp">
+ 
+  </nav>
+ 
+<div class="bdy">
+    <h3>Profile</h3>
+<div class="profile-container">
+    <div class="profile-header">
+      <img src="../../assets/java pictures.jpg" alt="Profile Picture" class="profile-picture">
+      <div>
+      <div class="profile-details">
+        <h2>{{firstName}}{{lastName}}</h2>
+        <h5>{{course}} Trainee</h5>
+ 
+        <table>
+            <tr class="up" >
+                <td>Domain</td>
+                <td>Batch</td>
+                <td>Course</td>
+                <td>Id</td>
+                <td>phone</td>
+            </tr>
+            <tr class="below">
+                <td>{{course}}</td>
+                <td>{{batch}}</td>
+                <td>{{course}}</td>
+                <td>{{id}}</td>
+                <td>{{phoneNumber}}</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+ 
+ 
+    <div>
+      <h4>Progress of your Curriculum</h4>
+      <div class="progress-bar">
+        <div class="step" *ngFor="let step of steps; let i = index" [ngClass]="{'completed': completedSteps >= i+1, 'current': currentStep === i+1, 'last': currentStep === steps.length && completedSteps === steps.length}" [style.--step-index]="i+1">
+          <span class="icon">{{ completedSteps > i ? '✓' : i+1 }}</span>
+          <span class="label">{{ step }}</span>
+  </div>
+</div>
+</div>
+</div>
+    <!-- <div class="controls">
+      <button (click)="goBack()" [disabled]="currentStep === 1">Back</button>
+      <button (click)="goNext()" [disabled]="currentStep === steps.length">Next</button> -->
+      <!-- <span>Step: {{ steps[currentStep-1] }}</span> -->
+    <!-- </div> -->
+   
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="secondbox">
+    <div class="profile-bio">
+        <h3>ABOUT</h3>
+      <p>Discover a world of opportunity with our specialized courses taught by industry leaders. Whether you're looking to upskill, reskill, or embark on a new career path, we've got you covered. Our hands-on training approach ensures you gain practical knowledge that's ready for the real world. Join us and take the next step towards your professional success today!"</p>
+    </div>
+ 
+    <!-- <div class="profile-interests">
+      <h3>Interest</h3>
+      <button>Corporate Enabler</button>
+      <button>Leading Business</button>
+      <button>Digital Content & Service</button>
+    </div> -->
+</div>
+ 
+    <!-- <div class="profile-badges">
+      <h3>Badges</h3>
+      <div class="badge-container">
+        <div class="badge-item">
+          <img src="bronze-badge.png" alt="Bronze Badge">
+          <p>Bronze</p>
+        </div>
+        <div class="badge-item">
+          <img src="silver-badge.png" alt="Silver Badge">
+          <p>Silver</p>
+        </div>
+        <div class="badge-item">
+          <img src="gold-badge.png" alt="Gold Badge">
+          <p>Gold</p>
+        </div>
+        <div class="badge-item">
+          <img src="weekend-warrior-badge.png" alt="Weekend Warrior Badge">
+          <p>Weekend Warrior Gold</p>
+        </div>
+        <div class="badge-item">
+          <img src="cannonball-badge.png" alt="Cannonball Badge">
+          <p>Cannonball Silver</p>
+        </div>
+        <div class="badge-item">
+          <img src="content-creator-badge.png" alt="Content Creator Badge">
+          <p>Content Creator Bronze</p>
+        </div>
+      </div>
+    </div> -->
+ 
+    <div class="profile-level">
+      <!-- <h3>My Course</h3> -->
+      <div class="level-container">
+        <span class="text">
+            "Embrace the challenge, for within every obstacle lies an opportunity to learn and grow. As tech trainees, let curiosity be your compass and perseverance your fuel on the journey to mastery."</span>
+        <!-- <p>Novice Learner</p> -->
+        <img src="../../assets/ai.jpg" alt="Novice Learner">
+        <!-- <p>30 XP</p> -->
+      </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+   
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-vector/technology-artifical-intelligence-background-with-face_1017-18298.jpg'); /* Replace with your own background image URL */
+    background-size: cover;
+    padding: 40px;
+  }
+   
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+  }
+   
+  h1 {
+    color: #6c5ce7;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+   
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0984e3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+   
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+   
+  .input-field {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+   
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+   
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #6c5ce7;
+  }
+   
+  .submit-button {
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .submit-button:hover {
+    background-color: #4834d4;
+  }
+   
+  .text-danger {
+    color: #ff7675;
+    font-size: 14px;
+  }
+   
+  .select-wrapper {
+    position: relative;
+  }
+   
+  .arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    pointer-events: none;
+  }

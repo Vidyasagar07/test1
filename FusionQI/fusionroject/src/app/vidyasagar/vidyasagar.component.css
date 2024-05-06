@@ -1,0 +1,144 @@
+@media(min-width:500px)
+{
+    .main-inbox{
+        /* border: 1px solid black; */
+        width: 100%;
+        height:100dvh;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: coral;
+    }
+    .left-inbox{
+        /* border: 1px solid red; */
+        width: 20%;
+        height: 98.7%;
+        margin: 0.3%;
+        /* margin: auto; */
+        background-color: rgb(48, 153, 156);
+        box-shadow: 0.5px 0.5px 2px 1px rgb(131, 131, 131);
+        border-radius: 3px;
+        text-align:center;
+        font-family:'Times New Roman', Times, serif;
+       
+    }
+    .left-inbox h2{
+        font-weight: bold;
+        padding-top: 5%;
+    }
+    /* .right-inbox{
+        border: 1px solid green;
+        width: 99%;
+        /* height: 87dvh; */
+        /* background-color:rgb(237, 237, 237); */
+    /* } */ */
+    .left-inbox-card{
+        width: 99%;
+        height: 100dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top:4% ;
+       
+    }
+    .inside-boxes{
+        width: 99%;
+        height: 10dvh;
+        /* border: 1px solid rgb(62, 25, 250); */
+        margin: auto;
+        margin-top: 2%;
+        box-shadow: 0.3px 0.3px 1px 1px darkolivegreen;
+       
+    }
+    .right-inbox-card{
+        width: 70%;
+        /* border: 1px solid black; */
+        display: flex;
+        position: absolute;
+        /* bottom:1.5%;    */
+    }
+    /* .inside-card1{
+        width: 18%;
+        height: 10dvh;
+        border: 1px solid gray;
+        position: absolute;
+        bottom:2%;
+        left: 2%;
+        border-radius: 50%;
+        box-shadow: 0.1px 0.1px 2px 0.5px darkolivegreen;
+        background-color:#a29999;
+       
+   
+    } */
+    .inside-card2{
+        width: 100%;
+        height: 98dvh;
+        margin:0.5%;
+        /* border: 1px solid darkgreen; */
+        position: relative;
+        /* left: 27%; */
+        /* margin-bottom: 4%; */
+        padding: 2%;
+        box-shadow: 0.5px 0.5px 4px 1px darkolivegreen;
+        background-color:rgb(215, 221, 231);
+       
+    }
+    .inbox-right-chat-h1{
+        font-size: 150%;
+        /* padding-bottom: 2%; */
+    }
+ 
+}
+@media(max-width:499.99px)
+{
+    .left-inbox{
+        /* border: 1px solid red; */
+        width: 85%;
+        height: 99dvh;
+        margin: auto;
+        margin-top: 2%;
+        /* background-color:rgb(215, 221, 231); */
+        box-shadow: 0.5px 0.5px 2px 1px rgb(131, 131, 131);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        overflow-y: scroll;
+       
+    }
+    .left-inbox h2{
+        font-weight: bold;
+        padding-top: 5%;
+    }
+    .left-inbox-card{
+        width: 99%;
+        height: 87dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top:5% ;
+       
+    }
+    .inside-boxes{
+        width: 99.5%;
+        height: 10dvh;
+        /* border: 1px solid rgb(62, 25, 250); */
+        margin: auto;
+        margin-top: 2%;
+        display: flex;
+        /* box-shadow: 0.3px 0.3px 2px 1px darkolivegreen; */
+        border: 1px solid gray;  
+        align-items: center;
+       
+    }
+    .profile{
+        width: 13%;
+        height: 6dvh;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        margin-left: 2%;
+        box-shadow: 0.1px 0.1px 2px 0.5px   ;
+        background-color: rgb(189, 238, 103);
+    }
+    .inside-card2{
+        display:none;
+    }
+ 
+}
+ 
+ 

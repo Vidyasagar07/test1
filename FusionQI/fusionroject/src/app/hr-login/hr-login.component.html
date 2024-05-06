@@ -1,0 +1,38 @@
+<div class="container bootstrap snippets bootdey">
+    <div class="row">
+        <div style="margin: auto;" class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="account-wall">
+                <div class="profile-img">
+                    <img src="../../assets/Screenshot 2024-04-04 172741_LE_auto_x2 1.jpg" alt="Description of image">
+                </div>
+                <form class="form-signin">
+                    <div>
+                        <input [(ngModel)]="mail" id="mail" name="mail" type="email" class="form-control"
+                            placeholder="Enter email/Username" required autofocus>
+                    </div>
+                    <div class="password-input-container">
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+                        <input [(ngModel)]="password" id="password" name="password" type="{{ showPassword ? 'text' : 'password' }}"
+                            class="form-control" placeholder="Password" (focus)="showPasswordDetails()"
+                            (blur)="hidePasswordDetails()" required />
+                        <div class="eye-toggle" (click)="togglePasswordVisibility()">
+                            <i [class]="showPassword ? 'far fa-eye-slash' : 'far fa-eye'"></i>
+                        </div>
+                    </div>
+                    <p style="color: red;" class="error-message">{{ errorMessage }}</p>
+            
+
+                    <button style="margin-left: 90px;"
+                        class="btn btn-lg btn-primary btn-block" type="button" (click)="login()">
+                        Sign in
+                    </button>
+                    
+                    <p style="padding-top: 20px; margin-left: 60px;">Don't have an account?<a href="#" class="text-center new-account"
+                          style=" margin-right:70px ;"  (click)="navigateToHrRegister($event)">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="container bootstrap snippets bootdey">
+
+    <div class="row">
+      <div style="margin: auto;" class="col-sm-6 col-md-4 col-md-offset-4">
+        <div class="account-wall">
+          <div class="profile-img">
+            <div class="profile-img">
+              <div class="profile-img">
+                <img src="../../assets/Screenshot 2024-04-04 172741_LE_auto_x2 1.jpg" alt="Description of image">
+            </div>
+            </div>
+          </div>
+          <form class="form-signin" [formGroup]="registrationForm">
+            <div>
+              <input type="fullName" id="fullName" class="form-control" placeholder="Full Name" formControlName="fullName" required autofocus>
+              <div *ngIf="registrationForm.get('fullName')?.invalid && (registrationForm.get('fullName')?.touched || registrationForm.get('fullName')?.dirty)">
+                <div class="red" *ngIf="registrationForm.get('fullName')?.hasError('required')">
+                  <div class="red">  Full name is required.</div>
+                </div>
+                <div class="red" *ngIf="registrationForm.get('fullName')?.hasError('invalidFullName')">
+                 <div class="red"> Invalid full name. Use only letters, spaces and up to 30 characters.</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="email" id="mail" class="form-control" placeholder="Email" formControlName="mail" required>
+              <div *ngIf="registrationForm.get('mail')?.hasError('required') && (registrationForm.get('mail')?.touched || registrationForm.get('mail')?.dirty)">
+                <div class="red">Email is required.</div>
+              </div>
+              <div *ngIf="registrationForm.get('mail')?.hasError('email') && (registrationForm.get('mail')?.touched || registrationForm.get('mail')?.dirty)">
+                <div class="red">Enter a valid email address.</div>
+              </div>
+            </div>
+            <div>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
+              <div class="password-input-container">
+                <input type="{{ showPassword ? 'text' : 'password' }}"id="password"class="form-control"placeholder="Password"formControlName="password"require/>
+                <div class="eye-toggle" (click)="togglePasswordVisibility()">
+                  <i [class]="showPassword ? 'far fa-eye-slash' : 'far fa-eye'"></i>
+                </div>
+              </div>
+              <div *ngIf="registrationForm.get('password')?.hasError('required') && (registrationForm.get('password')?.touched || registrationForm.get('password')?.dirty)">
+                <div class="red">Password is required.</div>
+              </div>
+              <div *ngIf="registrationForm.get('password')?.hasError('minlength') && (registrationForm.get('password')?.touched || registrationForm.get('password')?.dirty)">
+                <div class="red">Password must be at least 8 characters long.</div>
+              </div>
+              <div *ngIf="registrationForm.get('password')?.hasError('invalidPassword') && (registrationForm.get('password')?.touched || registrationForm.get('password')?.dirty)">
+                <div class="red">
+                  Invalid password. Ensure it has at least one lowercase letter, one uppercase letter, one digit, and one special character.
+                </div>
+              </div>
+              
+              <input type="{{ showConfirmPassword ? 'text' : 'password' }}" id="confirmPassword" class="form-control" placeholder="Confirm Password" formControlName="confirmPassword" required/>
+    <div *ngIf="registrationForm.get('confirmPassword')?.hasError('required') && (registrationForm.get('confirmPassword')?.touched || registrationForm.get('confirmPassword')?.dirty)">
+      <div class="red">Confirm Password is required.</div>
+    </div>
+    <div *ngIf="registrationForm.hasError('passwordMismatch') && registrationForm.get('confirmPassword')?.touched">
+      <div class="red">Passwords do not match.</div>
+    </div>
+  </div>
+              
+            
+              
+            
+  
+            <div *ngIf="registrationStatus === 'success'" class="alert alert-success mt-3" role="alert">
+              <div class="red">Registration successful! Please log in.</div>
+            </div>
+  
+            <div *ngIf="registrationStatus === 'conflict'" class="alert alert-danger mt-3" role="alert">
+              <div class="red">Email is already taken. Please use another email.</div>
+            </div>
+  
+            <button style="height: 43px; margin-left: 100px;" class="btn btn-lg btn-success btn-block" type="submit" (click)="register()">
+              Register
+            </button>
+            <div>
+              
+            </div>
+          </form>
+  

@@ -1,0 +1,38 @@
+<div class="contact-color">
+    <div class=" contact-list">
+        <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <!-- SVG Icon Code -->
+            </svg>
+            <input  type="search" (ngModelChange)="searchCandidates(key.value)" #key="ngModel" ngModel name="key" id="searchName"
+            class="form-control mr-sm-2 curved-input " placeholder="Search Candidates" required>          
+        </div>
+        <table class="table" *ngIf="contacts && contacts.length > 0"> <!-- Use ngIf to conditionally render table -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <!-- <th>Phone</th> -->
+                    <th>courses</th>
+                    <th>memberStatus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contact of filteredContacts ? filteredContacts : contacts"> <!-- Use filteredContacts if available -->
+                  <td>{{ contact.firstName}}</td>
+                  <td>{{ contact.email}}</td>
+                  <!-- <td>{{ contact.phone}}</td> -->
+                  <td>{{ contact.message}}</td>
+                  <td>{{ contact.member_status}}</td>
+                  <td>
+                    <button class="btn btn-danger" (click)="delete(contact.id)">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+        <div *ngIf="contacts && contacts.length === 0"> <!-- Use ngIf to show message when contacts array is empty -->
+            No contacts found.
+        </div>
+    </div>
+  </div>
+  

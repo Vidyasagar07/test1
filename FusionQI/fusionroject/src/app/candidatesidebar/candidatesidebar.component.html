@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <header>My App</header>
+    <nav class="sidenav">
+        <a [routerLink]="['/candidatehome',{
+          outlet:{
+            'list':['\home']
+          }
+        }]" class="active">Home</a>
+        <hr>
+        <a   [routerLink]="['/progressba']" >My Learnings</a>
+        <a class="navweb"  [routerLink]="['/']" >Syllabus</a>
+        <a class="navweb"  [routerLink]="['/getstudentdetails']" >View Details</a>
+        <a   class="navweb"  [routerLink]="['/studentform']" >Form</a>
+    
+        <hr class="hr2">
+     
+      <a  href="#">Logout</a>
+      <a href="#">UpdateProfile
+        <img src="../../assets/uk profile.jpg" alt="pp" class="pp">
+     
+     
+      </a>
+     
+     
+      </nav>
+     

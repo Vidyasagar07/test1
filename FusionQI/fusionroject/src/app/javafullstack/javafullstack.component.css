@@ -1,0 +1,1540 @@
+
+@media (min-width: 700px){
+    .Bottom-container{
+        box-shadow: 5px 5px 8px 10px gray;
+        margin-top: 3%;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        padding: 0px;
+    }
+    .bar{
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .fa-solid{
+        padding: 0px;
+        margin-right: 16px;
+        color: black;
+        font-size: 18px;
+    }
+    .courses{
+   
+        text-decoration: none;
+        color:black;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin: 16px;
+    }
+    .mulesoft{
+        color: #0267d4;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin: 16px;
+    }
+    #content-h1{
+        font-size: 42px;
+    }
+    .paragraph{
+        font-size: 17px;
+        color: black;
+        width: 600px;
+        height: auto;
+        /* margin-left: 280px; */
+        margin-left:40% ;
+       
+    }
+    .line{
+        width: 3%;
+        height: 6dvh;
+        border-left: 5px solid black;
+        border-right: 2px solid gray;
+        margin: 2%;
+    }
+    .sub-title{
+        display: flex;
+       
+    }
+    .caption{
+        /* border: 1px solid black; */
+        margin: 2%;
+        width:90%;
+    }
+    .caption h5{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 1%;
+    }
+    .btn-container{
+        width: 140%;
+        display: flex;
+        justify-content: center;
+        /* gap: 100px; */
+        margin-right: 1%;
+        align-items: stretch;
+        flex-wrap: wrap;
+        /* border: 1px solid black; */
+       
+         
+    }
+    .btn-container .button{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+       
+    }
+    .apply-button {
+        margin-left: 25%;
+        background-color: black;
+        width: 125px;
+        height: 40px;
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+    }
+    .apply-button:hover{
+        background-color: black;
+        width: 120px;
+        height: 37px;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+   
+    }
+    /* .Roadmap-button{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    } */
+    .Roadmap-button{
+        margin-left: 200px;
+        width: 250px;
+        height: 40px;
+        color: rgb(45, 168, 244);
+        background-color:rgb(238, 240, 241);
+        /* margin-left: 250px;  */
+        /* margin-top: 45px; */
+        /* margin-left:300px; */
+        border: 2px solid lightskyblue;
+       
+    }
+    .Roadmap-button:hover {
+       
+        width: 250px;
+        height: 40px;
+        color: white;
+        background-color:rgb(103, 208, 243);
+        /* margin-top: 45px; */
+        /* margin-left:300px; */
+        box-shadow: 1px 1px 2px 1px grey;
+    }
+    .home-container{
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: justify;
+        display: flex;
+        margin-left: 3%;
+        /* justify-content: center; */
+ 
+    }
+    .nav-container{
+        /* margin-left: 280px; */
+        margin-left: 40%;
+    }
+    .title{
+        /* margin-left: 280px; */
+        margin-left: 40%;
+    }
+    .sub-title{
+        /* margin-left: 280px; */
+        margin-left: 40%;
+    }
+    .image-container{
+        border: 1px solid black;
+        width:23%;
+        height:45dvh;
+        margin:auto;
+        margin-left: 23%;
+        border-radius: 15px;
+    }
+    .bottom-container{
+        width:100%;
+        /* border: 2px solid gray; */
+        box-shadow:-10px -10px 20px -5px gray;
+        border-radius: 3px;
+    }
+    .bottom-buttons{
+        margin-left: 19%;
+    }
+    .bottom-buttons button {
+        margin-right: 3%;
+    }
+    .scroll-arrow-container{
+        display: none;
+    }
+    .Overview{
+        margin: auto;
+        width: 60%;
+        text-align: justify;
+        margin-top: 2.3%;
+        padding: 2%;
+        box-shadow: 0.5px 0.5px 3px 1px gray;
+ 
+    }
+    .Overview span{
+        font-weight: bold;
+    }
+    .mentors{
+        width: 60%;
+        margin:auto;
+     /* border: 1px solid black; */
+        text-align: center;
+        margin-top: 2.3%;
+    }
+    .mentors h1{
+        font-family:serif;
+        font-weight: bold;
+    }
+    .mentor-line{
+        width: 7%;
+        height: 0.6dvh;
+        background-color:black;
+        border-radius: 1px;
+        margin: auto;
+    }
+    .mentors-box{
+        display: flex;
+        /* border-bottom: 1px solid black; */
+    }
+    .mentor-card{
+        width: 30%;
+        height: 60dvh;
+        /* border: 1px solid black; */
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        margin: auto;
+        margin-top: 3%;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .mentor-image{
+        width: 80%;
+        height: 30dvh;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 3%;
+    }
+    .mentor-profile{
+        margin: auto;
+     /* border: 1px solid black; */
+        /* width:220px; */
+    }
+    .mentor-profile h4{
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+        margin: auto;
+        margin-top: 3%;
+ 
+    }
+    .mentor-profile a img{
+        width: 14%;
+        margin-top: 3%;
+ 
+    }
+    .mentor-profile p{
+        margin:auto;
+        margin-top: 3%;
+    }
+    .curriculum{
+        text-align: center;
+        /* border: 1px solid; */
+        margin-top: 3%;
+       
+    }
+    .curriculum h6{
+        margin-top: 25px;
+   
+    }
+    /* .card-image{
+        width: 290px;
+        height: 190px;
+        margin-left:600px;
+        border: 1px solid black;
+        margin-bottom: -190px;
+        margin-top: 33px;
+        background-image: url("https://static.wixstatic.com/media/5aef47_73f82cf473a440dc97f17f9ce5d4fc30~mv2.png/v1/fill/w_354,h_221,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/body%2Bcareer%2Bpath.png");
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+    } */
+    .image-line{
+        width: 80%;
+        height: 2dvh;
+        border-top: 2px solid black;
+        margin: auto;
+        margin-top: 12%;
+        z-index: -1;
+       
+    }
+    .image-box{
+        width: 20%;
+        height: 28dvh;
+        border: 1px solid black;
+        margin-top: -8%;
+        margin-left: 38%;  
+       
+    }
+    .image-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .curriculum-arrow1{
+        width: 3%;
+        height: 5dvh;
+        /* border: 1px solid black; */
+        margin-top: 10%;
+        margin-left: 80.4%;
+       
+    }
+    .curriculum-arrow1 img{
+        width: 100%;
+        height: 100%;  
+    }
+    .curriculum-arrow2{
+        width: 3%;
+        height: 5dvh;
+        /* border: 1px solid black; */
+        margin-top: 18%;
+        margin-left: 80.4%;
+       
+    }
+    .curriculum-arrow2 img{
+        width: 100%;
+        height: 100%;  
+    }
+   
+    .curriculum-boxes{
+        width: 70%;
+        /* border: 1px solid rgb(223, 6, 6); */
+        /* position: absolute; */
+        display: flex;
+        margin: auto;
+        margin-top: -32%;
+        z-index: -1;
+       
+       
+    }
+    .curriculum-box .fa-solid{
+        align-items: flex-end;
+    }
+    .box-border1{
+        width: 21%;
+        /* height: 60dvh; */
+        /* border: 1px solid yellowgreen; */
+       
+    }
+    .box-border2{
+        width: 22%;
+        /* height: 60dvh; */
+        /* border: 1px solid yellowgreen; */
+    }
+    .box-border3{
+        width: 22%;
+        /* height: 60dvh; */
+        /* border: 1px solid yellowgreen; */
+ 
+    }
+    .box-border4{
+        width: 22%;
+        /* height: 60dvh; */
+        /* border: 1px solid yellowgreen; */
+   
+    }
+    .border-box5{
+        width: 14%;
+        height: 60dvh;
+        /* border: 1px solid yellowgreen; */
+   
+    }
+    .curriculum-box1{
+        width: 99%;
+        /* border: 1px solid black; */
+        margin-top:5%;
+        /* height: 320px; */
+        text-align: justify;
+        padding-right:5%;
+        padding-left:9%;
+        border-top: 3px dashed black;  
+   
+    }
+    .curriculum-box1 h6{
+        font-size: 13px;
+        font-weight: bold;
+    }
+       
+    .curriculum-box1 p{
+        font-size: 13px;
+       
+    }
+    .curriculum-box2{
+        width: 99%;
+        /* border: 1px solid black; */
+        /* margin-top: 250px; */
+        text-align: justify;
+        padding-right:5%;
+        padding-left:9%;
+        margin-top: -25%;
+       
+    }
+    .curriculum-box2 h6{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .curriculum-box2 p{
+        font-size: 13px;
+    }
+    .mini-box2{
+        width: 99%;
+        height:8.2dvh;
+        margin-top: 5%;
+        border-top: 3px dashed black;
+        border-left: 3px dashed black;
+        /* border: 1px solid red; */
+   
+    }
+    .mini-box2 h6{
+   
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .mini-box2 p{
+        font-size: 13px;
+       
+    }
+    .curriculum-box3{
+        width:99%;
+        /* margin-top: 220px; */
+        /* height: 380px; */
+        /* border: 1px solid gray; */
+        text-align: justify;
+        padding-right:5%;
+        padding-left:9%;
+        margin-top: -25%;
+       
+       
+   
+    }
+    .curriculum-box3 h6{
+        font-size: 13px;
+        font-weight: bold;
+       
+    }
+    .curriculum-box3 p{
+        font-size: 13px;
+       
+    }
+    .mini-box3{
+        width: 99%;
+        height: 8.4dvh;
+        margin-top: 5%;
+        border-top: 3px dashed black;
+        border-left: 3px dashed black;
+        /* border: 1px solid red; */
+   
+    }
+    .mini-box3 h6{
+       font-size: 13px;
+       font-weight: bold;
+     
+    }
+    .mini-box3 p{
+        font-size: 13px;
+    }
+    .curriculum-box4{
+        width: 99%;
+        /* border: 1px solid black; */
+        /* margin-top: 160px; */
+        /* height: 438px; */
+        text-align: justify;
+        padding-right:5%;
+        padding-left:9%;
+        margin-top: -25%;
+       
+   
+    }
+    .curriculum-box4 p{
+        font-size: 13px;
+     
+    }
+    .curriculum-box4 h6{
+        font-size: 13px;
+        font-weight: bold;
+       
+    }
+   
+    .mini-box4{
+        width: 99%;
+        margin-top:5%;
+        height:8.4dvh;
+        border-top: 3px dashed black;
+        border-left: 3px dashed black;
+        /* border: 1px solid red; */
+   
+    }
+    .mini-box4 h6{
+        font-size: 13px;
+        font-weight: bold;
+       
+    }
+   
+    .mini-box4 p{
+        font-size: 13px;  
+    }
+       
+    .curriculum-box5{
+        width: 69.5%;
+        /* border: 1px solid black; */
+        /* margin-top: 100px; */
+        height: 500px;
+        border-right: 3px dashed black;
+         
+       
+    }
+   
+    .mini-box5{
+        width: 69.5%;
+        height:7dvh;
+        margin-top:47%;
+        border-top: 3px dashed black;
+        border-left: 3px dashed black;
+        border-right: 3px dashed black;
+        /* border: 1px solid red; */
+   
+    }
+    .icon-box1{
+        width: 50%;
+        height:14dvh;
+        border: 1px solid rgb(170, 221, 221);
+        border-radius: 50%;
+        margin-top: 80%;
+        margin-left:25%;
+        overflow: hidden;
+        background-color:rgb(172, 232, 232);
+   
+    }
+    .icon-box1 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+        padding-left: 6%;
+    }
+    .icon-box2{
+        width: 45%;
+        height: 14dvh;
+        border: 1px solid rgb(172, 231, 233);
+        border-radius: 50%;
+        margin-top:52%;
+        margin-left:25%;
+        overflow: hidden;
+        background-color: rgb(177, 231, 231);
+       
+    }
+    .icon-box2 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+    }
+    .icon-box3{
+        width: 45%;
+        height: 14dvh;
+        border: 1px solid rgb(170, 246, 249);
+        border-radius: 50%;
+        margin-top: 27%;
+        margin-left:25%;
+        overflow: hidden;
+        background-color:rgb(172, 234, 234);
+       
+    }
+    .icon-box3 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+        padding-left: -6%;
+       
+    }
+    .icon-box4{
+        width: 45%;
+        height: 14dvh;
+        border: 1px solid rgb(172, 239, 242);
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-left:25%;
+        overflow: hidden;
+        background-color:rgb(170, 247, 247);
+       
+    }
+    .icon-box4 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+    }
+    .curriculum-card{
+        width: 66%;
+        height: 36dvh;
+        margin:auto;
+        border: 3px dashed black;
+        margin-top: 2.6%;
+        background-color: #abcdf1;
+        border-radius: 15px;
+        padding-top: 3%;
+    }
+    .curriculum-card h5{
+        color: black;
+        text-align: center;
+    }
+    .placement-card{
+        display: flex;
+           
+    }
+    .p-card1{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 30%;
+        margin: 2%;
+        height: 15dvh;
+        /* margin-left: 55px;
+        margin-right: 50px; */
+        align-items: center;
+        color:black;
+       
+   
+    }
+    .p-card2{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 30%;
+        height: 15dvh;
+        margin: 2%;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+        align-items: center;
+        color:black;
+       
+   
+    }
+    .p-card3{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 30%;
+        height: 15dvh;
+        margin: 2%;
+        /* margin-left: 50px;
+        margin-right: 30px; */
+        align-items: center;
+        color:black;
+       
+    }
+    .p-icon1{
+        width: 20%;
+        height: 8dvh;
+        margin: 5%;
+        /* border:1px solid green; */
+        background-image: url("../../assets/cv.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    .p-icon2{
+        width:20%;
+        height: 8dvh;
+        margin: 5%;
+        /* border:1px solid green; */
+        background-image: url("../../assets/job-interview.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .p-icon3{
+        width:20%;
+        height: 8dvh;
+        margin: 5%;
+        /* border:1px solid green; */
+        background-image: url("../../assets/customer-service.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .curriculum-underline{
+        width: 60%;
+        height: 6dvh;
+        border-bottom: 1px solid black;
+        margin: auto;
+        /* margin-top: 3%; */
+    }
+    .curriculum-underline-gap{
+        width: 60%;
+        height: 5dvh;
+    }
+    .icon{
+        display: flex;
+    }
+   
+    .projects{
+        color: black;
+        font-size: 17px;
+        width: 60%;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 3%;
+        text-align: center;
+        letter-spacing: 1px;
+   
+    }
+    .projects span{
+        font-size: 17px;
+        font-weight: bold;
+        color: black;
+    }
+    .project-card1 {
+        perspective: 1000px;
+        width: 300px;
+        height: 300px;
+    }
+   
+    .main-card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+   
+    .project-card1:hover .main-card {
+        transform: rotateY(180deg);
+    }
+   
+    .front-card, .back-card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color:hwb(208 72% 7%);
+        /* border: 1px solid #ccc; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
+    .back-card {
+        transform: rotateY(180deg);
+    }
+    .project-card2{
+        width: 250px;
+        height: 250px;
+        /* border: 1px solid black; */
+        margin-top: 25px;
+    }
+    .project-card2 img{
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .project-container{
+        display: flex;
+        margin-left: 70px;
+    }
+    .project-card3 {
+        perspective: 1000px;
+        width: 300px;
+        height: 300px;
+    }
+    .project-card3:hover .main-card {
+        transform: rotateY(180deg);
+    }
+    .fees-underline{
+        width: 60%;
+        height: 6dvh;
+        border-bottom: 1px solid black;
+        margin: auto;
+        /* margin-bottom: 20%; */
+    }
+    .fees-underline-gap{
+        width: 60%;
+        height: 5dvh;
+    }
+    .admission{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid; */
+    margin-top: 3%;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0.5px 0.5px 3px 1px gray;
+   
+ }
+.admission-image{
+    width: 95%;
+    height: 25dvh;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-image: url("../../assets/admission.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+ .fees{
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding: 1%r;
+    margin-top: 1%;
+ 
+ }
+ .course-card{
+    width: 99%;
+    height: 35dvh;
+    margin: auto;
+    border: 3px solid black;
+    padding: 2%;
+    box-shadow:1px 1px 5px 1px gray;
+ }
+ .fee-apply-button {
+    text-align:right ;
+    margin-top: -21%;  
+   
+ }
+ #deadline-id{
+    color: red;
+ }
+ #caption-fees{
+    font-weight: bold;
+ }
+ #apply-id{
+    font-weight: bold;
+ }
+ #fees-id{
+    font-size: 20px;
+ }
+ .faqs
+{
+    width:60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: darkslategrey; */
+    color: black;
+    box-shadow: 2px 2px 10px 8px gray;
+    margin-top: 3%;
+ 
+}
+.faqs h6{
+    font-weight: bold;
+}
+.faqs p{
+    padding-left: 15px;
+   
+}
+}
+@media (max-width: 699.99px){
+    .home-container{
+        padding: 5%;
+    }
+    .Bottom-container{
+        margin-top: 5%;
+        box-shadow: 3px 3px 8px 10px gray;
+    }
+    .sub-title{
+        display: flex;
+        margin: 2%;
+       
+    }
+    .caption{
+        /* margin: 2%; */
+        /* border: 1px solid; */
+        margin-left: 2%;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        padding: 0px;
+    }
+    .bar{
+        color: black;
+        font-size: 15px;
+        /* font-size: 10px; */
+        /* font-weight: bolder; */
+    }
+    .fa-solid{
+        padding: 0px;
+        margin-right:13px;
+        color: black;
+        font-size: 13px;
+    }
+    .courses{
+   
+        text-decoration: none;
+        color:black;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin: 13px;
+    }
+    .mulesoft{
+        color: #0267d4;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin: 13px;
+    }
+    #content-h1{
+        font-size: 40px;
+    }
+    .caption h5{
+        font-size: 13px;
+        font-weight: bold;
+        margin-top:2%;
+    }
+    .line{
+        /* background-color: cornflowerblue; */
+        border-left: 4px solid black;
+        height:6dvh;
+        width: 2.5%;
+        margin-top: 2px;
+        border-right: 2px solid gray;
+    }
+    .paragraph{
+        margin-top: 2%;
+        font-size: 14px;
+        width: 99%;
+        height: auto;
+        text-align: justify;
+        /* border: 1px solid; */
+        padding: 3%;
+        margin-left: -1%;
+    }
+    .apply-button{
+        background-color: black;
+        width: 125px;
+        height: 40px;
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+    }
+    .apply-button:hover{
+        background-color: black;
+        width: 120px;
+        height: 37px;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+    }
+    .Roadmap-button{
+        /* width: 100vw; */
+        display: flex;
+        justify-content: center;
+       
+    }
+    .Roadmap-button{
+        width:200px;
+        height: 38px;
+        color: rgb(45, 168, 244);
+        background-color:rgb(238, 240, 241);  
+        margin-top: 20px;
+        border: 2px solid lightskyblue;
+ 
+    }
+    .Roadmap-button:hover {
+        width: 200px;
+        height: 40px;
+        color: white;
+        background-color:rgb(103, 208, 243);
+        box-shadow: 1px 1px 2px 1px grey;
+ 
+    }
+    .image-container{
+        border: 1px solid black;
+        width:60%;
+        height:30dvh;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+    nav .bottom-buttons{
+        display: block;
+        display: flex;
+        flex-wrap:nowrap;
+        overflow-x: scroll;
+    }
+    .bottom-buttons button{
+        color: black;
+ 
+    }
+    .bottom-buttons button:hover{
+        background-color: lightcyan;
+    }
+    .bottom-buttons::-webkit-scrollbar{
+        width: 0px;
+    }
+    .scroll-arrow-container{
+        background-color: transparent;
+        text-align: right;
+        border: transparent;
+       
+    }
+    .scroll-arrow .fa-solid{
+        font-size: 15px;
+    }
+    .Overview{
+        font-size: 15px;
+        text-align: justify;
+        padding: 7%;
+    }
+    .Overview span{
+        font-weight: bold;
+    }
+    .mentors{
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       padding: 4%;
+    }
+    .mentors h1{
+       font-size: 23px;
+    }
+    .mentor-line{
+        width: 12%;
+        background-color: black;
+        height: 0.5dvh;
+        border-radius: 1px;
+        margin-left: 45%;
+        margin-top: 4%;
+    }
+    .mentors-box{
+        margin:5%;
+    }
+    .mentor-card{
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        margin: auto;
+        margin-top: 6%;
+        border-radius: 5%;
+        padding-top: 3%;
+        /* background-color: rgb(244, 249, 249); */
+       
+    }
+    .mentor-image{
+        width: 50%;
+        height: 25dvh;
+        border: 1px solid gray;
+        margin: auto;
+        border-radius: 50%;
+ 
+    }
+    .mentor-profile h4{
+        font-size: 18px;
+        margin: 3%;
+    }
+    .mentor-profile a img{
+        width:9%;
+        margin: auto;
+    }
+    .mentor-profile p{
+        font-size: 15px;
+        padding: 3%;
+    }
+    .image-line{
+        width: 94%;
+        height: 2dvh;
+        border-top: 2px solid black;
+        margin: auto;
+        margin-top: 23%;
+        z-index: -1;
+       
+    }
+    .image-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .mini-box2{
+        display: none;
+    }
+    .mini-box3{
+        display: none;
+    }
+    .mini-box4{
+        display: none;
+    }
+    .mini-box5{
+        display: none;
+    }
+    .curriculum{
+        text-align: center;
+        padding: 2%;
+    }
+    .image-box{
+        width: 40%;
+        height: 18dvh;
+        border: 1px solid black;
+        margin-top: -18%;
+        margin-left: 30%;
+       
+    }
+    .curriculum-arrow1{
+        width: 8%;
+        height: 4dvh;
+        /* border: 1px solid black; */
+        margin-top:45%;
+    }
+    .curriculum-arrow1 img{
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .curriculum-arrow2{
+        width: 8%;
+        height: 4dvh;
+        /* border: 1px solid black; */
+        margin-top:305%;
+    }
+    .curriculum-arrow2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .curriculum-boxes{
+        width: 99%;
+        height:295dvh;
+        /* border: 1px solid black; */
+        border-left: 3px dashed black;
+        margin: auto;
+        margin-top: -355%;
+        z-index: -1;
+        margin-left: 3.8%;
+       
+ 
+    }
+    .icon-box1{
+        width: 21%;
+        height: 13dvh;
+        border: 1px solid rgb(172, 252, 252);
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: rgb(172, 252, 252);
+    }
+    .icon-box2{
+        width: 21%;
+        height: 13dvh;
+        border: 1px solid rgb(172, 252, 252);
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: rgb(172, 252, 252);
+    }
+    .icon-box3{
+        width: 21%;
+        height: 13dvh;
+        border: 1px solid rgb(172, 252, 252);
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: rgb(172, 252, 252);
+    }
+    .icon-box4{
+        width: 21%;
+        height: 13dvh;
+        border: 1px solid rgb(172, 252, 252);
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: rgb(172, 252, 252);
+    }
+ 
+    .icon-box1 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+        padding-left: 5%;
+       
+    }
+    .icon-box2 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+       
+    }
+ 
+    .icon-box3 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+       
+    }
+ 
+    .icon-box4 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 80%;
+        padding-top: 12%;
+       
+    }
+ 
+ 
+    .curriculum-box1{
+        width: 90%;
+        /* height: 50dvh; */
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        text-align: justify;
+        padding: 3%;
+    }
+    .curriculum-box2{
+        width: 90%;
+        /* height: 50dvh; */
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        text-align: justify;
+        padding: 3%;
+    }
+    .curriculum-box3{
+        width: 90%;
+        /* height: 50dvh; */
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        text-align: justify;
+        padding: 3%;
+    }
+    .curriculum-box4{
+        width: 90%;
+        /* height: 50dvh; */
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        text-align: justify;
+        padding: 3%;
+    }
+    .curriculum-box5{
+        display: none;
+    }
+    .curriculum-box h6{
+        font-size: 14px;
+ 
+    }
+    .curriculum-box p{
+        font-size: 14px;
+ 
+    }
+    .curriculum-card{
+        border: 3px dashed black;
+        margin: auto;
+        margin-top: -2.6%;
+        text-align: center;
+        background-color:rgb(153, 212, 249) ;
+        border-radius: 5%;
+        padding: 3%;
+    }
+    .curriculum-card h5{
+        font-size: 16px;
+        font-weight: bold;
+       
+    }
+    .placement-card{
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 3%;
+    }
+    .p-card1{
+        /* border: 1px solid green; */
+        color: black;
+    }
+    .p-icon1{
+        width: 20%;
+        height: 10dvh;
+        background-image: url("../../assets/cv.png");
+        background-repeat: no-repeat;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 3%;
+ 
+    }
+    .p-card2{
+        /* border: 1px solid green; */
+        color: black;
+    }
+    .p-icon2{
+        width: 20%;
+        height: 10dvh;
+        background-image: url("../../assets/job-interview.png");
+        background-repeat: no-repeat;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 3%;
+ 
+    }
+    .p-card3{
+        /* border: 1px solid green; */
+        color: black;
+    }
+    .p-icon3{
+        width: 20%;
+        height: 10dvh;
+        background-image: url("../../assets/customer-service.png");
+        background-repeat: no-repeat;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 3%;
+ 
+    }
+    .curriculum-underline{
+        width: 96%;
+        height: 3dvh;
+        border-bottom: 1px solid black;
+        margin: auto;
+    }
+    .curriculum-underline-gap{
+        width: 95%;
+        height: 3dvh;
+        margin: auto;
+    }
+    .projects{
+        color: black;
+        font-size: 17px;
+        width: 80%;
+        height: 40%;
+        /* border: 1px solid black; */
+        margin: auto;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 4%;
+   
+    }
+    .projects span{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+    .project-card1 {
+        perspective: 100%;
+        width: 99%;
+        height:25dvh;
+        /* border: 1px solid; */
+        margin: auto;
+    }
+   
+    .main-card {
+        width: 100%;
+        height: 25dvh;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+   
+    .project-card1:hover .main-card {
+        transform: rotateY(180deg);
+    }
+   
+    .front-card, .back-card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color:hwb(208 72% 7%);
+        /* border: 1px solid #ccc; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
+    .back-card {
+        transform: rotateY(180deg);
+    }
+    .project-card2{
+        width:99%;
+        height: 25dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+    .project-card2 img{
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        padding: 3%;
+    }
+    .project-container{
+        /* display: flex; */
+        margin:auto;
+    }
+    .project-card3 {
+        perspective: 100%;
+        width: 99%;
+        height: 25dvh;
+        margin: auto;
+    }
+    .project-card3:hover .main-card {
+        transform: rotateY(180deg);
+    }
+    .admission{
+        width: 98%;
+        /* border: 1px solid; */
+        margin: auto;
+        padding: 3%;
+        text-align: justify;
+        margin-top: 5%;
+        letter-spacing: 1px;
+    }
+    .admission p{
+       font-size: 15px;
+     
+    }
+    .admission-card1{
+        width:98%;
+        height: 35dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-bottom: 8%;
+        padding: 5%;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        background-image: url("../../assets/Submitapplication.jpeg");
+        background-size: cover;
+ 
+    }
+    .admission-card2{
+        width:98%;
+        height: 35dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-bottom: 8%;
+        padding: 5%;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        background-image: url("../../assets/Applicationreview.jpeg");
+        background-size: cover;
+ 
+    }
+    .admission-card3{
+        width:98%;
+        height: 35dvh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-bottom: 8%;
+        padding: 5%;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        background-image: url("../../assets/Admission.jpeg");
+        background-size: cover;
+ 
+    }
+    .admission-card3 img{
+        width: 99%;
+        height: 100%;
+    }
+    .fees{
+        width: 99%;
+        height: 50dvh;
+        margin: auto;
+        padding: 3%;
+        /* border: 1px solid black; */
+    }
+    .course-card{
+        width: 100%;
+        height: 98%;
+        /* border: 1px solid black; */
+        padding: 2%;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        text-align: center;
+        margin-top:4%;
+ 
+    }
+    .course-card h6{
+        font-size: 18px;
+ 
+    }
+   
+    .course-card .fa-solid{
+        font-size: 17px;
+       
+    }
+    #caption-fees{
+        font-size: 15px;
+    }
+    #deadline-id{
+        color: red;
+        font-size: 15px;
+    }
+    #apply-id{
+        font-weight: bold;
+        padding-bottom: 2%;
+ 
+    }
+    .fees-underline{
+        width: 98%;
+        height: 6dvh;
+        border-bottom: 1px solid black;
+        margin: auto;
+    }
+    .fees-underline-gap{
+        width: 98%;
+        height: 4dvh;
+    }
+    .fee-apply-button button .fa-solid{
+        color: white;
+        padding: 3%;
+    }
+    .faqs{
+        width: 97%;
+        border: 1px solid black;
+        padding: 2%;
+        box-shadow: 0.2px 0.2px 4px 1px gray;
+        margin: auto;
+ 
+    }
+    .faqs h6{
+        font-size: 13px;
+ 
+    }
+    .faqs p{
+        font-size: 13px;
+    }
+   
+   
+ 
+ 
+ 
+}

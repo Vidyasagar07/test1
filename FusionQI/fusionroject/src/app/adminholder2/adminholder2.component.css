@@ -1,0 +1,21 @@
+.nav-link.btn {
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+    border-color: #000; /* Black border */
+  }
+
+  .nav-link.btn:hover {
+    color: #fff; /* White text on hover */
+    background-color: #000; /* Black background on hover */
+    border-color: #000; /* Black border on hover */
+  }
+
+  .nav-link.btn.active,
+  .nav-link.btn:focus {
+    color: #fff; /* White text when active or focused */
+    background-color: #000; /* Black background when active or focused */
+    border-color: #000; /* Black border when active or focused */
+  }
+  .tab-content {
+    width: 100%; /* Adjust this value as needed */
+}

@@ -1,0 +1,88 @@
+
+<div class="header" style="width: 100%;  ">
+  <nav class="navbar navbar-expand-lg text-white">
+  <div class="container-fluid">
+  <img src="../../assets/ai.jpg" alt="" style="width: 170px;height: 80px;margin-left: 30px;">
+  <form class="d-flex" role="search">
+  <div class="group">
+  <div class="suggest">
+  <div>
+  <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+  <g>
+  <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+  </path>
+  </g>
+  </svg>
+  <input
+                id="query"
+                class="input search-home"
+                type="search"
+                placeholder="Search..."
+                name="searchbar"
+                [(ngModel)]="query"
+                (input)="onSearch()"
+                (keyup.enter)="onSearchEnter()"
+                autocomplete="off"
+              />
+  </div>
+  </div>
+  </div>
+  </form>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse new" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+  <div class="nav-home">
+  <li class="nav-item px-3">
+  <!-- <a class="nav-link home" aria-current="page" [routerLink]="['/']" routerLinkActive="active">Home</a> -->
+  <a class="nav-link home " [routerLink]="['/home']" routerLinkActive="active">Home</a>
+  </li>
+  </div>
+  <div class="nav-about">
+  <li class="nav-item">
+  <a class="nav-link about" [routerLink]="['/About']" routerLinkActive="active">About</a>
+  </li>
+  </div>
+  <div class="course-nav">
+  <li class="nav-item dropdown nav-course">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active">
+                  Courses
+  </a>
+  <ul class="dropdown-menu">
+  <li><a class="dropdown-item" [routerLink]="['/javafullstack']">Java FullStack</a></li>
+  <li><a class="dropdown-item" [routerLink]="['/python']">Python</a></li>
+  <!-- <li><hr class="dropdown-divider" /></li> -->
+  <li><a class="dropdown-item" [routerLink]="['/mulecourrse']">MuleSoft</a></li>
+  </ul>
+  </li>
+  </div>
+  <div class="nav-contact">
+  <li class="nav-item">
+  <a class="nav-link" [routerLink]="['/contactinfo']" routerLinkActive="active">Contact</a>
+  </li>
+  </div>
+  <div class="nav-login">
+  <div class="nav-item dropdown nav-username" *ngIf="!authService.isLogged()">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active">
+  {{ authService.username }}
+  <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+  <li><a class="dropdown-item" (click)="goToDashboard()">Dashboard</a></li>
+  <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+  </ul>
+  </div>
+  <div class="nav-login" *ngIf="authService.isLogged()" >
+  <li class="nav-item">
+  <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+  </li>
+  </div>
+  </div>
+  </ul>
+  </div>
+  </div>
+  </nav>
+  </div>

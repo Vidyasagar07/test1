@@ -1,0 +1,48 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button  style="color: hsl(219, 75%, 52%); margin-top: 30px;" class="btn btn-outline-secondary"disabled type="button">
+  <h3>Application-Home  </h3></button>
+</div>
+
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand"></a>
+    <form style="margin-left: 630px;" class="flexd-" role="search">
+      <input  type="search" (ngModelChange)="searchCandidates(key.value)" #key="ngModel" ngModel name="key" id="searchName"
+        class="form-control mr-sm-2 curved-input " placeholder="Search Candidates" required>
+    </form>
+  </div> 
+</nav>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Submission Time</th>
+        <th scope="col">Full Name</th>
+        <!-- <th scope="col">Last Name</th> -->
+        <th scope="col">Email</th>
+        <th scope="col">phone</th>
+        <th scope="col">Applying For</th>
+</tr>
+    
+</thead>
+
+    <tbody> 
+      <tr *ngFor="let employee of appliedCandidates">
+        <th>ID:{{ employee.id }} -{{employee.time_submission}}</th>
+        <td>{{ employee.fullname}}</td>
+        <!-- <td>{{ employee.Fullname}}</td> -->
+        <td>                   
+          <a href="mailto:{{ employee.email }}">{{ employee.email }}</a>
+        </td>
+        <td>{{ employee.phone }}</td>
+        <td>{{ employee.applying_for }}</td>
+
+      </tr>
+
+     
+    </tbody>
+  </table>
+  

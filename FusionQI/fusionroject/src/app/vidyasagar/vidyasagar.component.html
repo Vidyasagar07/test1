@@ -1,0 +1,38 @@
+<div class="main-inbox">
+  <div class="left-inbox">
+      <h2>Inbox</h2>
+      <div class="left-inbox-card" >
+          <div class="inside-boxes" *ngFor="let contact of data">
+            <div class="profile" >
+                <div  (click)="hi(contact.id)">
+                  <p>{{contact.firstName}}</p>
+                  <p class="small">{{contact.email}}</p>
+                </div>
+              </div>
+ 
+          </div>
+ 
+      </div>
+ 
+  </div>
+  <div class="right-inbox">
+      <div class="right-inbox-card">
+          <div class="inside-card1">
+ 
+          </div>
+          <div class="inside-card2">
+            <h1 class="inbox-right-chat-h1">Application-Home</h1>
+            <label for="">Full name:</label>
+            <p  id="Fname">{{name}}</p>
+            <label for="">Message:</label>
+            <p>{{message}}</p>
+            <!-- <label for="">Phone:</label>
+            <p>{{number}}</p> -->
+            <label for="">Applying for:</label>
+            <!-- <p>Mulesoft</p> -->
+          </div>
+      </div>
+ 
+ 
+  </div>
+</div>

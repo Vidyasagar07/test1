@@ -1,0 +1,20 @@
+
+
+.copyright{
+    background-color: black;
+    height:30px;
+    color: white;
+    text-align: center; 
+    margin-top:0px;
+    font-family:sans-serif;
+}
+
+.copyright-para{
+    padding-top:5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .image-text {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
