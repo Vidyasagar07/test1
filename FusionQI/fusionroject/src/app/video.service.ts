@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class VideoService {
 
-  private apiUrl = 'http://ec2-13-127-176-161.ap-south-1.compute.amazonaws.com:8080/video/get/2';
+  private apiUrl = 'http://localhost:8080/video/get/2';
 
   constructor(private http: HttpClient) { }
 
